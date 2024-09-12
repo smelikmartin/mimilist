@@ -16,6 +16,9 @@ header {
   padding-top: 50px;
   text-align: center;
 }
+header h1 {
+  display: none;
+}
 header nav {
   display: flex;
   flex-direction: column;

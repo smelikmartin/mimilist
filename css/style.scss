@@ -21,6 +21,10 @@ header {
     padding-top: 50px;
     text-align: center;
 
+    h1 {
+        display: none;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
