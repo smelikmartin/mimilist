@@ -13,7 +13,7 @@ body {
 
 header {
   background-color: #ffffff;
-  padding: 50px 0;
+  padding-top: 50px;
   text-align: center;
 }
 header nav {
@@ -24,7 +24,7 @@ header nav {
   padding: 20px;
 }
 header nav .logo {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 header nav ul {
   list-style: none;
@@ -37,11 +37,11 @@ header nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
+  padding: 10px;
 }
 header nav ul li a:hover {
   background-color: #489f9a;
   color: white;
-  padding: 10px;
 }
 header nav .menu-toggle {
   display: none;
@@ -68,7 +68,8 @@ main section h2 {
   padding-bottom: 2x;
   text-transform: uppercase;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 main section h2::after {
   content: "";
@@ -150,6 +151,9 @@ main .contact-list .contact-icon {
   display: block;
 }
 
+#pricelist {
+  margin-bottom: 50px;
+}
 #pricelist h2::after {
   margin-bottom: 10px;
 }
@@ -171,6 +175,10 @@ main .contact-list .contact-icon {
   white-space: nowrap;
 }
 
+#contact {
+  margin-bottom: 50px;
+}
+
 .banner {
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -186,6 +194,7 @@ footer {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  color: #489f9a;
 }
 
 .scroll-to-top {
