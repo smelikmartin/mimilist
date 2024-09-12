@@ -53,11 +53,7 @@ header {
         }
     
         .menu-toggle {
-            display: none;
-            font-size: 24px;
-            background: none;
-            border: none;
-            cursor: pointer;
+            display: none;            
         }
     }
 }
@@ -261,35 +257,62 @@ footer {
     background-color: #555;
 }
 
-
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: 1fr;
     }
 
-    nav {
-        .menu-toggle {
-            display: block; // Zobrazí hamburger ikonu na mobilní verzi
-            margin-bottom: 10px;
-        }
+    header {
 
-        ul {
-            display: none; // Skryje menu položky na mobilních zařízeních
-            flex-direction: column;
-            width: 100%;
-            gap: 10px;
+        nav {
+            .menu-toggle {
+                display: block; // Zobrazí hamburger ikonu na mobilní verzi
+                background-color: $main-green;
+                width: 100%;
+                padding: 15px;
+                border: none;
+                color: white;
+                font-size: 18px;
+            }
 
-            li {
-                margin: 10px 0;
+            ul {
+                display: none; // Skryje menu položky na mobilních zařízeních
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+
+                li {
+                    margin: 10px 0;
+                }
+            }
+
+            &.active ul {
+                display: flex; // Zobrazí položky menu po kliknutí na hamburger
+            }
+
+            .home-icon {
+                display: none;
             }
         }
+    }
 
-        &.active ul {
-            display: flex; // Zobrazí položky menu po kliknutí na hamburger
+    #pricelist {
+        .pricing-item {
+            .description {
+                white-space: wrap;
+            }
         }
     }
 
     .banner {
         display: none;
+    }
+
+    main {
+        section {
+            .banner-container {
+                display: none;
+            }
+        }
     }
 }

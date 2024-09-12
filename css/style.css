@@ -45,10 +45,6 @@ header nav ul li a:hover {
 }
 header nav .menu-toggle {
   display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
 .container {
@@ -224,23 +220,37 @@ footer {
   .gallery {
     grid-template-columns: 1fr;
   }
-  nav .menu-toggle {
+  header nav .menu-toggle {
     display: block;
-    margin-bottom: 10px;
+    background-color: #489f9a;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-size: 18px;
   }
-  nav ul {
+  header nav ul {
     display: none;
     flex-direction: column;
     width: 100%;
     gap: 10px;
   }
-  nav ul li {
+  header nav ul li {
     margin: 10px 0;
   }
-  nav.active ul {
+  header nav.active ul {
     display: flex;
   }
+  header nav .home-icon {
+    display: none;
+  }
+  #pricelist .pricing-item .description {
+    white-space: wrap;
+  }
   .banner {
+    display: none;
+  }
+  main section .banner-container {
     display: none;
   }
 }
