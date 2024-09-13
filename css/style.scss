@@ -107,7 +107,7 @@ main {
             }
        }
 
-       .banner-container {
+        .banner-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px 0;
@@ -117,6 +117,10 @@ main {
             width: 100%;
             height: auto;
             display: block;
+        }
+
+        .banner-image-mobile {
+            display: none;
         }
     }
 
@@ -222,12 +226,18 @@ main {
     width: 100vw;
     margin-left: calc(50% - 50vw);
 
-    img {
+    .banner-main {
         width: 100%;
         height: auto;
         display: block;
     }
+
+    .banner-mobile {
+        display: none;
+    }
 }
+
+
 
 footer {
     background-color: $background-color;
@@ -308,15 +318,30 @@ footer {
         }
     }
 
-    .banner {
-        display: none;
-    }
-
     main {
         section {
-            .banner-container {
+            .banner-image {
                 display: none;
             }
+        
+            .banner-image-mobile {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+    
+
+    .banner {    
+        .banner-main {
+            display: none;
+        }
+
+        .banner-mobile {
+            width: 100%;
+            height: auto;
+            display: block;
         }
     }
 }

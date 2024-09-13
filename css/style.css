@@ -99,6 +99,9 @@ main section .banner-image {
   height: auto;
   display: block;
 }
+main section .banner-image-mobile {
+  display: none;
+}
 main #orders ul {
   list-style-type: none;
   padding-left: 20px;
@@ -182,10 +185,13 @@ main .contact-list .contact-icon {
   width: 100vw;
   margin-left: calc(50% - 50vw);
 }
-.banner img {
+.banner .banner-main {
   width: 100%;
   height: auto;
   display: block;
+}
+.banner .banner-mobile {
+  display: none;
 }
 
 footer {
@@ -250,11 +256,21 @@ footer {
   #pricelist .pricing-item .description {
     white-space: wrap;
   }
-  .banner {
+  main section .banner-image {
     display: none;
   }
-  main section .banner-container {
+  main section .banner-image-mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .banner .banner-main {
     display: none;
+  }
+  .banner .banner-mobile {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
