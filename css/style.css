@@ -272,6 +272,9 @@ footer {
     height: auto;
     display: block;
   }
+  .banner .divider {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
